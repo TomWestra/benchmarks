@@ -31,7 +31,7 @@ namespace Benchmarks.Data
 
         public int CompareTo(Fortune other)
         {
-            return Message.CompareTo(other.Message);
+            return String.CompareOrdinal(Message, other.Message);
         }
     }
 }
